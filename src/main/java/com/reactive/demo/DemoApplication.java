@@ -1,6 +1,10 @@
 package com.reactive.demo;
 
+import com.reactive.demo.combination.Combination;
+import com.reactive.demo.conditional.Conditional;
 import com.reactive.demo.data.Data;
+import com.reactive.demo.error.ErrorOp;
+import com.reactive.demo.filter.Filter;
 import com.reactive.demo.model.Person;
 import com.reactive.demo.operator.Create;
 import com.reactive.demo.trasformation.Transformation;
@@ -66,10 +70,30 @@ public class DemoApplication implements CommandLineRunner {
 		//create.range();
 		//create.repeat();
 
-		Transformation trasformation = new Transformation();
+		//Transformation trasformation = new Transformation();
 		//trasformation.map();
 		//trasformation.map2();
 		//trasformation.flatMap();
-		trasformation.groupBy();
+		//trasformation.groupBy();
+
+		//Filter filter = new Filter();
+		//filter.filter();
+		//filter.distinct();
+		//filter.take();
+		//filter.takelast();
+
+		//Combination combination = new Combination();
+		//combination.merge();
+		//combination.zip();
+		//combination.zipWith();
+
+		//ErrorOp error = new ErrorOp();
+		//error.retry();
+		//error.errorReturn();
+		//error.errorResume();
+		//error.errorMap();
+
+		Conditional conditional = new Conditional();
+		conditional.defaultEmty();
 	}
 }

@@ -2,6 +2,7 @@ package com.reactive.demo.data;
 
 import com.reactive.demo.DemoApplication;
 import com.reactive.demo.model.Person;
+import com.reactive.demo.model.Sale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,4 +22,14 @@ public class Data {
       return persons;
   }
    protected List listPerson = listPerson();
+
+    public List<Sale> listSale(){
+        List<Sale> sales = new ArrayList<>();
+        sales.add(new Sale(1,"Celular"));
+        sales.add(new Sale(2,"Moto"));
+        sales.add(new Sale(1,"Pc"));
+        sales.add(new Sale(3,"Ram"));
+
+        return sales;
+    }
 }
