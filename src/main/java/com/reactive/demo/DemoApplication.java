@@ -5,6 +5,7 @@ import com.reactive.demo.conditional.Conditional;
 import com.reactive.demo.data.Data;
 import com.reactive.demo.error.ErrorOp;
 import com.reactive.demo.filter.Filter;
+import com.reactive.demo.mathematician.Mathematician;
 import com.reactive.demo.model.Person;
 import com.reactive.demo.operator.Create;
 import com.reactive.demo.trasformation.Transformation;
@@ -93,7 +94,16 @@ public class DemoApplication implements CommandLineRunner {
 		//error.errorResume();
 		//error.errorMap();
 
-		Conditional conditional = new Conditional();
-		conditional.defaultEmty();
+		//Conditional conditional = new Conditional();
+		//conditional.defaultEmty();
+		//conditional.takaUntil();
+		//conditional.timeout();
+
+		Mathematician mathematician = new Mathematician();
+		//mathematician.average();
+		//mathematician.count();
+		//mathematician.min();
+		//mathematician.sum();
+		mathematician.summarizing();
 	}
 }
